@@ -16,3 +16,24 @@ export type FrameSignaturePacket = {
     messageBytes: string;
   };
 };
+
+export interface TokenBalance {
+  name: string;
+  address: string;
+  totalBalance: string;
+  decimals: string;
+};
+
+export interface UsernameProofData {
+  timestamp: number,
+  name: string,
+  owner: string,
+  signature: string,
+  fid: number,
+  type: string
+}
+
+export interface TokenData {
+  name: string
+  usdValue: number
+}
